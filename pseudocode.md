@@ -17,7 +17,7 @@
 //WHEN I view the timeblocks for that day
 //THEN each timeblock is color coded to indicate whether it is in the past, present, or future
 
-- Set timeblock colors based on the current time (moment.js) using the supplied css classes
+- Set timeblock colors based on the current time (moment.js) using the supplied css classes !DONE!
 
 
 // WHEN I click into a timeblock
