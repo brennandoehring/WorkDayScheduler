@@ -5,4 +5,4 @@ This workday scheduler will allow the user to save tasks that need to be done in
 https://brennandoehring.github.io/workday-scheduler-bdd/
 
 ## Screenshot of Deployed Website
-<img src = "website.jpg" alt = "Image of deployed website">
+<img src = "Assets/website.jpg" alt = "Image of deployed website">
