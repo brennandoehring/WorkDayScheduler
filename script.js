@@ -98,5 +98,140 @@ $(document).ready(function() {
         console.log("Initializing the timeblock color function.");
         var currentHour = moment().hour();
         console.log("The current hour is: " + currentHour);
+        // 9AM 
+        if (currentHour < 9) {
+            $('#9').removeClass("present");
+            $('#9').removeClass("past");
+            $('#9').addClass("future");
+        } else if (currentHour == 9) {
+            $('#9').removeClass("future");
+            $('#9').removeClass("past");
+            $('#9').addClass("present");
+        } else {
+            $('#9').removeClass("present");
+            $('#9').removeClass("future");
+            $('#9').addClass("past");
+        }
+
+        // 10AM
+        if (currentHour < 10) {
+            $('#10').removeClass("present");
+            $('#10').removeClass("past");
+            $('#10').addClass("future");
+        } else if (currentHour == 10) {
+            $('#10').removeClass("future");
+            $('#10').removeClass("past");
+            $('#10').addClass("present");
+        } else {
+            $('#10').removeClass("present");
+            $('#10').removeClass("future");
+            $('#10').addClass("past");
+        }
+
+        // 11AM
+        if (currentHour < 11) {
+            $('#11').removeClass("present");
+            $('#11').removeClass("past");
+            $('#11').addClass("future");
+        } else if (currentHour == 11) {
+            $('#11').removeClass("future");
+            $('#11').removeClass("past");
+            $('#11').addClass("present");
+        } else {
+            $('#11').removeClass("present");
+            $('#11').removeClass("future");
+            $('#11').addClass("past");
+        }
+
+        // 12PM
+        if (currentHour < 12) {
+            $('#12').removeClass("present");
+            $('#12').removeClass("past");
+            $('#12').addClass("future");
+        } else if (currentHour == 12) {
+            $('#12').removeClass("future");
+            $('#12').removeClass("past");
+            $('#12').addClass("present");
+        } else {
+            $('#12').removeClass("present");
+            $('#12').removeClass("future");
+            $('#12').addClass("past");
+        }
+
+        // 1PM
+        if (currentHour < 13) {
+            $('#13').removeClass("present");
+            $('#13').removeClass("past");
+            $('#13').addClass("future");
+        } else if (currentHour == 13) {
+            $('#13').removeClass("future");
+            $('#13').removeClass("past");
+            $('#13').addClass("present");
+        } else {
+            $('#13').removeClass("present");
+            $('#13').removeClass("future");
+            $('#13').addClass("past");
+        }
+
+        // 2PM
+        if (currentHour < 14) {
+            $('#14').removeClass("present");
+            $('#14').removeClass("past");
+            $('#14').addClass("future");
+        } else if (currentHour == 14) {
+            $('#14').removeClass("future");
+            $('#14').removeClass("past");
+            $('#14').addClass("present");
+        } else {
+            $('#14').removeClass("present");
+            $('#14').removeClass("future");
+            $('#14').addClass("past");
+        }
+
+        // 3PM
+        if (currentHour < 15) {
+            $('#15').removeClass("present");
+            $('#15').removeClass("past");
+            $('#15').addClass("future");
+        } else if (currentHour == 15) {
+            $('#15').removeClass("future");
+            $('#15').removeClass("past");
+            $('#15').addClass("present");
+        } else {
+            $('#15').removeClass("present");
+            $('#15').removeClass("future");
+            $('#15').addClass("past");
+        }
+
+        // 4PM
+        if (currentHour < 16) {
+            $('#16').removeClass("present");
+            $('#16').removeClass("past");
+            $('#16').addClass("future");
+        } else if (currentHour == 16) {
+            $('#16').removeClass("future");
+            $('#16').removeClass("past");
+            $('#16').addClass("present");
+        } else {
+            $('#16').removeClass("present");
+            $('#16').removeClass("future");
+            $('#16').addClass("past");
+        }
+
+        // 5PM
+        if (currentHour < 17) {
+            $('#17').removeClass("present");
+            $('#17').removeClass("past");
+            $('#17').addClass("future");
+        } else if (currentHour == 17) {
+            $('#17').removeClass("future");
+            $('#17').removeClass("past");
+            $('#17').addClass("present");
+        } else {
+            $('#17').removeClass("present");
+            $('#17').removeClass("future");
+            $('#17').addClass("past");
+        }
+        console.log("Timeblocks have been colored.");
     }); displayLocal();
 });
