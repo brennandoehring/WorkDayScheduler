@@ -1,16 +1,3 @@
-// Time array for timeblocks
-var timeArray = {
-    "9AM": "", 
-    "10AM": "",
-    "11AM": "",
-    "12PM": "",
-    "1PM": "",
-    "2PM": "",
-    "3PM": "",
-    "4PM": "",
-    "5PM": "",
-};
-
 // Initializes upon page opening
 $(document).ready(function() {
     console.log("Let's begin!");
@@ -49,38 +36,38 @@ $(document).ready(function() {
     });
     
     // 1PM
-    $('#btn1').on('click', function() {
-        var text1 = $('#1').val();
-        localStorage.setItem('#1', text1);
-        console.log(localStorage.getItem('#1', text1) + " has been saved to local storage for later use. (1PM)");
+    $('#btn13').on('click', function() {
+        var text13 = $('#13').val();
+        localStorage.setItem('#13', text13);
+        console.log(localStorage.getItem('#13', text13) + " has been saved to local storage for later use. (1PM)");
     });
     
     // 2PM
-    $('#btn2').on('click', function() {
-        var text2 = $('#2').val();
-        localStorage.setItem('#2', text2);
-        console.log(localStorage.getItem('#2', text2) + " has been saved to local storage for later use. (2PM)");
+    $('#btn14').on('click', function() {
+        var text14 = $('#14').val();
+        localStorage.setItem('#14', text14);
+        console.log(localStorage.getItem('#14', text14) + " has been saved to local storage for later use. (2PM)");
     });
     
     // 3PM
-    $('#btn3').on('click', function() {
-        var text3 = $('#3').val();
-        localStorage.setItem('#3', text3);
-        console.log(localStorage.getItem('#3', text3) + " has been saved to local storage for later use. (3PM)");
+    $('#btn15').on('click', function() {
+        var text15 = $('#15').val();
+        localStorage.setItem('#15', text15);
+        console.log(localStorage.getItem('#15', text15) + " has been saved to local storage for later use. (3PM)");
     });
     
     // 4PM
-    $('#btn4').on('click', function() {
-        var text4 = $('#4').val();
-        localStorage.setItem('#4', text4);
-        console.log(localStorage.getItem('#4', text4) + " has been saved to local storage for later use. (4PM)");
+    $('#btn16').on('click', function() {
+        var text16 = $('#16').val();
+        localStorage.setItem('#16', text16);
+        console.log(localStorage.getItem('#16', text16) + " has been saved to local storage for later use. (4PM)");
     });
     
     // 5PM
-    $('#btn5').on('click', function() {
-        var text5 = $('#5').val();
-        localStorage.setItem('#5', text5);
-        console.log(localStorage.getItem('#5', text5) + " has been saved to local storage for later use. (5PM)");
+    $('#btn17').on('click', function() {
+        var text17 = $('#17').val();
+        localStorage.setItem('#17', text17);
+        console.log(localStorage.getItem('#17', text17) + " has been saved to local storage for later use. (5PM)");
     });
 
     // Displays all saved local storage in text areas
@@ -95,20 +82,21 @@ $(document).ready(function() {
     // 12PM
     $('#12').text(localStorage.getItem('#12'));
     // 1PM
-    $('#1').text(localStorage.getItem('#1'));
+    $('#13').text(localStorage.getItem('#13'));
     // 2PM
-    $('#2').text(localStorage.getItem('#2'));
+    $('#14').text(localStorage.getItem('#14'));
     // 3PM
-    $('#3').text(localStorage.getItem('#3'));
+    $('#15').text(localStorage.getItem('#15'));
     // 4PM
-    $('#4').text(localStorage.getItem('#4'));
+    $('#16').text(localStorage.getItem('#16'));
     // 5PM
-    $('#5').text(localStorage.getItem('#5'));
+    $('#17').text(localStorage.getItem('#17'));
     }
 
     // Changes timeblock colors
-    function timeblockColorSet() {
-        console.log("Initializing timeblockColorSet function.");
+    $(function() {
+        console.log("Initializing the timeblock color function.");
         var currentHour = moment().hour();
-    } timeblockColorSet; displayLocal();
+        console.log("The current hour is: " + currentHour);
+    }); displayLocal();
 });
