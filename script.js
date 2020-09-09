@@ -73,22 +73,31 @@ $(document).ready(function() {
     // Displays all saved local storage in text areas
     function displayLocal() {
     console.log("Displaying local storage values...");
+    
     // 9AM
     $('#9').text(localStorage.getItem('#9'));
+    
     // 10AM
     $('#10').text(localStorage.getItem('#10'));
+    
     // 11AM
     $('#11').text(localStorage.getItem('#11'));
+    
     // 12PM
     $('#12').text(localStorage.getItem('#12'));
+    
     // 1PM
     $('#13').text(localStorage.getItem('#13'));
+    
     // 2PM
     $('#14').text(localStorage.getItem('#14'));
+    
     // 3PM
     $('#15').text(localStorage.getItem('#15'));
+    
     // 4PM
     $('#16').text(localStorage.getItem('#16'));
+    
     // 5PM
     $('#17').text(localStorage.getItem('#17'));
     }
