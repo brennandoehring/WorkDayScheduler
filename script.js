@@ -83,10 +83,32 @@ $(document).ready(function() {
         console.log(localStorage.getItem('#5', text5) + " has been saved to local storage for later use. (5PM)");
     });
 
+    // Displays all saved local storage in text areas
+    function displayLocal() {
+    console.log("Displaying local storage values...");
+    // 9AM
+    $('#9').text(localStorage.getItem('#9'));
+    // 10AM
+    $('#10').text(localStorage.getItem('#10'));
+    // 11AM
+    $('#11').text(localStorage.getItem('#11'));
+    // 12PM
+    $('#12').text(localStorage.getItem('#12'));
+    // 1PM
+    $('#1').text(localStorage.getItem('#1'));
+    // 2PM
+    $('#2').text(localStorage.getItem('#2'));
+    // 3PM
+    $('#3').text(localStorage.getItem('#3'));
+    // 4PM
+    $('#4').text(localStorage.getItem('#4'));
+    // 5PM
+    $('#5').text(localStorage.getItem('#5'));
+    }
+
     // Changes timeblock colors
     function timeblockColorSet() {
         console.log("Initializing timeblockColorSet function.");
-        
-
-    }
+        var currentHour = moment().hour();
+    } timeblockColorSet; displayLocal();
 });
