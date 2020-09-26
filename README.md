@@ -4,5 +4,5 @@ This workday scheduler will allow the user to save tasks that need to be done in
 ## URL of Deployed Website
 https://brennandoehring.github.io/workday-scheduler-bdd/
 
-## Screenshot of Deployed Website
-<img src = "Assets/website.jpg" alt = "Image of deployed website">
+## Website Preview
+<img src = "assets/images/workdayscheduler.gif">
